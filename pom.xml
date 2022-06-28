@@ -49,6 +49,18 @@
             <url>https://github.com/obiteaaron</url>
         </developer>
     </developers>
+    <contributors>
+        <contributor>
+            <name>Nan Wang</name>
+            <email>wnjustdoit@gmail.com</email>
+            <url>https://github.com/wnjustdoit</url>
+        </contributor>
+        <contributor>
+            <name>Zhang Ethan</name>
+            <email>joychen888@gmail.com</email>
+            <url>https://github.com/zhangethan</url>
+        </contributor>
+    </contributors>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -60,7 +72,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.13.1</version>
+            <version>4.13.2</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
