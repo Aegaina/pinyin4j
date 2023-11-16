@@ -28,7 +28,7 @@ import net.sourceforge.pinyin4j.multipinyin.Trie;
  */
 public class PinyinHelper {
 
-  private static final String[] ARR_EMPTY = {};
+  private static final String[] ARR_EMPTY = null;
   private static final String EMPTY = "";
 
   /**
@@ -291,7 +291,7 @@ public class PinyinHelper {
       if (result == null) {
         if (retain) {
           // can be converted  =>  can't
-          if (i > 0 && retainSeparator && lastHasResult && !lastIsSeparator){
+          if (i > 0 && retainSeparator && lastHasResult && !lastIsSeparator) {
             resultPinyinStrBuf.append(separate);
           }
           resultPinyinStrBuf.append(chars[i]);
@@ -300,7 +300,7 @@ public class PinyinHelper {
 
       } else {
         // can't be converted  =>  can
-        if (i > 0 && retain && retainSeparator && !lastHasResult ) {
+        if (i > 0 && retain && retainSeparator && !lastHasResult) {
           resultPinyinStrBuf.append(separate);
           lastIsSeparator = true;
         }

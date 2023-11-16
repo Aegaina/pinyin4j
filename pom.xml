@@ -9,9 +9,9 @@
         <version>7</version>
     </parent>
 
-    <groupId>com.belerweb</groupId>
+    <groupId>org.zhaolinger.common</groupId>
     <artifactId>pinyin4j</artifactId>
-    <version>2.5.1</version>
+    <version>2.6.1</version>
 
     <name>Chinese to Pinyin</name>
     <description>Support Chinese character (both Simplified and Tranditional) to most popular Pinyin systems, including Hanyu Pinyin, Tongyong Pinyin, Wade-Giles, MPS2, Yale and Gwoyeu Romatzyh. Support multiple pronounciations and customized output.</description>
@@ -36,6 +36,10 @@
         <url>https://github.com/belerweb/pinyin4j/issues</url>
     </issueManagement>
     <developers>
+        <developer>
+            <name>Li Min</name>
+            <email>xmlerlimin@gmail.com</email>
+        </developer>
         <developer>
             <id>belerweb</id>
             <name>Tangjun He</name>
@@ -88,7 +92,6 @@
                     <compilerSource>${maven.compiler.source}</compilerSource>
                     <compilerTargetPlatform>${maven.compiler.source}</compilerTargetPlatform>
                     <configFile>${project.basedir}/eclipse-java-google-style.xml</configFile>
-                    <lineEnding>LF</lineEnding>
                 </configuration>
                 <executions>
                     <execution>
@@ -144,4 +147,19 @@
         </pluginManagement>
     </build>
 
+    <distributionManagement>
+        <!--<repository>
+            <id>github</id>
+            <url>https://maven.pkg.github.com/Aegaina/pinyin4j</url>
+        </repository>-->
+        <repository>
+            <id>gitlab</id>
+            <url>https://gitlab.com/api/v4/projects/52192886/packages/maven</url>
+        </repository>
+
+        <snapshotRepository>
+            <id>gitlab</id>
+            <url>https://gitlab.com/api/v4/projects/52192886/packages/maven</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
